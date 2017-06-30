@@ -1,0 +1,67 @@
+LAYOUT (TEXT="Automatic Mandatory Field Indicator Test")
+VBOX
+
+GROUP (TEXT="Simple case")
+GRID
+{
+Field 1 [f01     ]
+Field 2 [f02     ]
+}
+END
+END
+
+GROUP (TEXT="Tightly packed, adjacent widget")
+GRID
+{
+[f03     |f04     ]
+}
+END
+END
+
+GROUP (TEXT="Tightly packed, adjacent text")
+GRID
+{
+[f05     ]%
+}
+END
+END
+
+GROUP (TEXT="Widget")
+GRID
+{
+[w01       ]
+[w02       ]
+[w03       ]
+[w04       ]
+[w05       ]
+[w06       ]
+[w07       ]
+[w08       ]
+[w09       ]
+[w10       ]
+[w11       ]
+}
+END -- GRID
+END -- GROUP
+END -- VBOX
+END -- LAYOUT
+ATTRIBUTES
+EDIT f01 = formonly.field1;
+EDIT f02 = formonly.field2 NOT NULL;
+EDIT f03 = formonly.field3 NOT NULL;
+EDIT f04 = formonly.field4 NOT NULL;
+EDIT f05 = formonly.field5 NOT NULL;
+
+
+
+EDIT w01 = formonly.ed NOT NULL;
+DATEEDIT w02 = formonly.de NOT NULL;
+BUTTONEDIT w03 = formonly.be NOT NULL;
+SPINEDIT w04 = formonly.se NOT NULL;
+DATETIMEEDIT w05 = formonly.dt NOT NULL;
+TIMEEDIT w06 = formonly.te NOT NULL;
+TEXTEDIT w07 = formonly.tx NOT NULL;
+COMBOBOX w08 = formonly.co NOT NULL, ITEMS=("Yes","No");
+CHECKBOX w09 = formonly.cb NOT NULL;
+RADIOGROUP w10 = formonly.rg NOT NULL, ITEMS=("Yes","No"), ORIENTATION=HORIZONTAL;
+SLIDER w11 = formonly.sl NOT NULL;

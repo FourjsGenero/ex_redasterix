@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ANSI_X3.4-1968"?>
+<StyleList>
+  <Style name="Window">
+     <StyleAttribute name="windowType" value="normal" />
+  </Style>
+  <Style name=".red_asterix">
+     <StyleAttribute name="textColor" value="red" />
+     <StyleAttribute name="fontWeight" value="bold" />
+  </Style>
+  <Style name=".mandatory">
+     <StyleAttribute name="backgroundColor" value="#FFF0F0" />
+  </Style>
+</StyleList>
