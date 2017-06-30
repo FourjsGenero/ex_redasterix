@@ -59,7 +59,7 @@
     <Library binaryName="red_asterix" id="1380036369" label="red_asterix">
       <File excludeFromLink="true" filePath="red_asterix.4gl"/>
     </Library>
-    <Application binaryName="red_asterix_test" dependencies="14000,1986,1380036369" id="18736" label="red_asterix_test">
+    <Application binaryName="red_asterix_test" dependencies="14000,1986" id="18736" label="red_asterix_test">
       <File filePath="red_asterix_test.4gl"/>
       <File filePath="red_asterix_test.4st"/>
       <File filePath="red_asterix_test.per"/>
