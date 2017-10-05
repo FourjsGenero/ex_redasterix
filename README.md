@@ -1,7 +1,5 @@
 # ex_redasterix
 
-** WARNING: This project is compiled using Genero 3.10. **
-
 Example code that shows some techniques of how you can automatically indicate fields are mandatory, and the strengths and weaknesses of each approach
 
 It uses ui.Form.setDefaultInitializer to call a function every time a form is loaded and manipulates the AUI Tree
@@ -15,7 +13,7 @@ Approaches include ...
 </p>
 
 
-* Adding a style to indicate that a field is mandatory.  A strength of this approach is that it does effect the geometry.  A weakness is that it is not suitable for all GUI widgets.  For instance a COMBOBOX maynot allow you to change the background colour.  If we had access to more GUI properties such as backgroundImage or border colour, then this approach might come into play more.
+* Adding a style to indicate that a field is mandatory.  A strength of this approach is that it does not effect the geometry.  A weakness is that it is not suitable for all GUI widgets.  For instance a COMBOBOX may not allow you to change the background colour.  If we had access to more GUI properties such as backgroundImage or border colour, then this approach might come into play more.
 
 <p align="center">
 <img alt="Style Screenshot" src="https://user-images.githubusercontent.com/13615993/27722006-9aca150e-5db8-11e7-8556-0f330f466bba.png" width="400" />
