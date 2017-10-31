@@ -35,7 +35,7 @@ END MAIN
 
 
 
-PRIVATE FUNCTION form_init(f)
+FUNCTION form_init(f)
 DEFINE f ui.Form
     CALL red_asterix.form_init(f)
 END FUNCTION
