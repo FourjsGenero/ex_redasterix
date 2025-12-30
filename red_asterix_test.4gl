@@ -1,7 +1,7 @@
 IMPORT FGL red_asterix
 MAIN
 DEFINE rec RECORD
-    field1, field2, field3, field4, field5 STRING,
+    field1, field2, field3, field4, field5 DECIMAL(11,2),
     ed, de, be, se, te, tx, dt, co, cb, rg, sl STRING
 END RECORD
 
@@ -13,6 +13,9 @@ END RECORD
     CALL ui.Window.getCurrent().setText("Automatic Mandatory Indicator Test")
     WHILE TRUE
         MENU "Select Method"
+            ON ACTION default ATTRIBUTES(TEXT="Default") 
+                LET red_asterix.mandatory_mode = 0
+                EXIT MENU
             ON ACTION red_asterix ATTRIBUTES(TEXT="Red Asterix") 
                 LET red_asterix.mandatory_mode = 1
                 EXIT MENU
